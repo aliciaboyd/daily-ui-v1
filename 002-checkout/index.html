@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>002: Checkout</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="checkout.js" defer></script>
+</head>
+<body>
+ 
+  <nav>
+    <a href="#"><img src="img/logo.svg" alt="Return to Homepage"></a>
+    <a href="#" class="small-link">Help</a>
+  </nav>
+
+  <div class="page-container">
+  <!-- CHECKOUT -->
+  <main>
+    <h1>Checkout</h1>
+
+    <div class="checkout-grid">
+      <form class="primary-form">
+
+        <div class="step step1">
+
+          <div class="section-label">
+            <div>
+              <span>1</span> 
+              <h2>Payment Details</h2>
+            </div>
+            <a href="#" class="edit-btn">Edit</a>
+          </div>
+
+          <div class="form-items active">
+            <h3>Payment Information</h3>
+            <label for="card-number">Card Number</label>
+            <input type="text" name="card-number" id="card-number">
+
+            <div class="two-col">
+              <div>
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" name="expiration-date" id="expiration-date">
+              </div>
+              <div>
+                <label for="expiration-date">CVC</label>
+                <input type="text" name="cvc" id="cvc">
+              </div>
+            </div>
+
+            <h3>Billing Address</h3>
+            <label for="billing-address">Address</label>
+            <input type="text" name="billing-address" id="billing-address">
+            <div class="three-col">
+              <div>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+              </div>
+              <div>
+                <label for="state">State</label>
+                <input type="text" name="state" id="state">
+              </div>
+              <div>
+                <label for="zip-code">Zip Code</label>
+                <input type="text" name="zip-code" id="zip-code">
+              </div>
+            </div>
+
+            <div class="progress">
+              <button class="progress-btn">Continue to next step</button>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="step step2">
+          <div class="section-label">
+            <div>
+              <span>2</span> 
+              <h2>Shipping Details</h2>
+            </div>
+             <a href="#" class="edit-btn">Edit</a>
+          </div>
+
+        </div>
+        
+        
+        <div class="step step3">
+          <div class="section-label">
+            <div>
+              <span>3</span> 
+              <h2>Review</h2>
+            </div>
+          </div>
+        
+        </div>
+
+      </form>
+
+
+      <section class="summary-container">
+        <div class="order-summary">
+          <div class="summary-header">
+            <h2>Order Summary</h2>
+          </div>
+
+          <div class="order-img-preview">
+            <span>
+              <img src="img/checkout_blue-sidechair.jpg" alt="Blue sidechair">
+            </span>
+            <span class="after-gradient">
+              <img  src="img/checkout_white-stool.jpg" alt="White stool">
+            </span>
+            <span>x4 items</span>
+          </div>
+
+          <div class="reciept">
+            <div>
+              <span>Item Total</span>
+              <span>$248.00</span>
+            </div>
+            <div>
+              <span>Standard Shipping</span>
+              <span>$10.00</span>
+            </div>
+            <div>
+              <span>Tax (7%)</span>
+              <span>$18.06</span>
+            </div>
+            <div>
+              <span>Total</span>
+              <span>$276.06</span>
+            </div>
+          </div>
+          
+          <button type="submit" disabled>Continue to next step</button>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer> 
+    <ul>
+      <li><a href="#" class="small-link">Terms and conditions</a></li>
+      <li><a href="#" class="small-link">Privacy policy</a></li>
+    </ul>
+  </footer>
+</div>
+
+</body>
+</html>

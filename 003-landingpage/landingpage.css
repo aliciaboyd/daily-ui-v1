@@ -1,0 +1,104 @@
+:root {
+  --dark-blue: #053C6F;
+  --lt-blue: #A0D2FF;
+  --grey: #596174;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+.italics {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.blue {
+  color: var(--dark-blue);
+}
+
+.primary-btn, .secondary-btn {
+  letter-spacing: .5px;
+  padding: .5rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+.primary-btn {
+  border: 1px solid var(--dark-blue);
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  background: url(img/header-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  border-bottom: 10px solid var(--dark-blue);
+}
+
+.hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.hero nav div > * {
+  display: inline-block;
+}
+
+.hero nav img {
+  height: 2rem;
+}
+
+.hero nav ul li {
+  display: inline-block;
+}
+
+
+.hero nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--grey);
+  font-size: .8rem;
+  letter-spacing: .5px;
+  margin: 1rem;
+}
+
+.hero section {
+  margin: 10rem 2rem;
+}
+
+.hero section button:first-of-type {
+  margin-right: 1rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: var(--grey);
+  max-width: 900px;
+}
+

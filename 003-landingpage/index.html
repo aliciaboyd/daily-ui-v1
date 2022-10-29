@@ -5,30 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>003: Landing Page</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="landingpage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
     
   <div class="hero">
     <nav>
-      <a href="#"><img src="img/logo-color.svg" alt="Logo"></a>
-      <div>
+      <a class="nav-logo" href="#"><img src="img/logo-color.svg" alt="Logo"></a>
+      
+      <button class="nav-menu-icon">
+        <img class="nav-icon" src="img/icon_menu.svg" alt="Open Menu">
+      </button>
+
+      <div class="nav-links">
         <ul>
           <li><a href="#">Our Process</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Resources</a></li>
           <li><a href="#">About Us</a></li>
-        </ul>
-        
+        </ul>  
         <button class="secondary-btn">Client Access</button>
       </div>
+      
+
     </nav>
   
-    <section>
+    <section class="container">
       <h1>Experience an <em class="italics blue">elevated</em> approach to private wealth managment</h1>
       <button class="primary-btn">Learn More</button>
       <button class="secondary-btn">Contact Us</button>
@@ -36,74 +43,80 @@
   </div>
 
   <main>
-    <section>
-      <h2><em class="italics">Personalized</em> Financial Planning</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum suscipit est, ac scelerisque sem interdum ac. Vestibulum quis sapien quis urna convallis elementum. Integer eget sapien leo. Suspendisse potenti. Proin maximus neque eget metus aliquam, quis finibus metus rutrum.
-      </p>
-      <p>
-        Etiam eget auctor risus. Nulla viverra ultrices diam in sollicitudin. Nam ultricies lorem augue, eget laoreet nisi molestie sit amet.
-      </p>
-    </section>
+    <div class="container">
+      <section class="intro">
+        <h2><em class="italics">Personalized</em><br> Financial Planning</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum suscipit est, ac scelerisque sem interdum ac. Vestibulum quis sapien quis urna convallis elementum. Integer eget sapien leo. Suspendisse potenti. Proin maximus neque eget metus aliquam, quis finibus metus rutrum.
+        </p>
+        <p>
+          Etiam eget auctor risus. Nulla viverra ultrices diam in sollicitudin. Nam ultricies lorem augue, eget laoreet nisi molestie sit amet.
+        </p>
+      </section>
 
-    <section class="services">
-      <h2>Our <em class="italics">Services</em></h2>
-      <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
+      <section class="services">
+        <h2>Our <em class="italics blue">Services</em></h2>
+        <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
 
-      <div class="four-col">
-        <div class="card">
-          <h3>Business Owners</h3>
-          <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-          <button class="secondary-btn">Learn More</button>
+        <div class="four-col">
+          <div class="card">
+            <h3>Business Owners</h3>
+            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
+            <button class="secondary-btn">Learn More</button>
+          </div>
+          <div class="card">
+            <h3>Estate Planning</h3>
+            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
+            <button class="secondary-btn">Learn More</button>
+          </div>
+          <div class="card">
+            <h3>Portfolio Management</h3>
+            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
+            <button class="secondary-btn">Learn More</button>
+          </div>
+          <div class="card">
+            <h3>Financial Planning</h3>
+            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
+            <button class="secondary-btn">Learn More</button>
+          </div>
         </div>
-        <div class="card">
-          <h3>Estate Planning</h3>
-          <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-          <button class="secondary-btn">Learn More</button>
-        </div>
-        <div class="card">
-          <h3>Portfolio Management</h3>
-          <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-          <button class="secondary-btn">Learn More</button>
-        </div>
-        <div class="card">
-          <h3>Financial Planning</h3>
-          <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-          <button class="secondary-btn">Learn More</button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="years">
-      <h2>Over <em class="italics">45 Years</em> in the Industry</h2>
-
-      <div class="two-col">
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum suscipit est, ac scelerisque sem Interdum ac. Vestibulum quis sapien quis urna convallis elementum. Integer eget sapien leo. Suspendisse potenti. 
-          </p>
-          <button class="primary-btn">Learn More</button>
+      <div class="container">
+        <h2>Over <em class="italics blue">45 Years</em> in the Industry</h2>
+  
+        <div class="two-col">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum suscipit est, ac scelerisque sem Interdum ac. Vestibulum quis sapien quis urna convallis elementum. Integer eget sapien leo. Suspendisse potenti. 
+            </p>
+            <button class="primary-btn">Learn More</button>
+          </div>
+          <div class="img-fill"></div>
         </div>
-        <div class="img-fill"></div>
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Let's Get <em class="italics">Started</em></h2>
-      <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
+    <div class="container">
+      <section class="contact">
+        <h2>Let's Get <em class="italics lt-blue">Started</em></h2>
+        <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
 
-      <form action="submit">
-        <div class="form-two-col">
-          <label for="name">Full Name</label>
-          <input type="text" name="name" id="name">
-          <label for="email">Email Address</label>
-          <input type="email" name="email" id="email">
-        </div>
-        <label for="request">What can we help you with?</label>
-        <input type="text" name="request" id="request">
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+        <form action="submit">
+          <div class="form-two-col">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <label for="request">What can we help you with?</label>
+          <input type="text" name="request" id="request">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
   </main>
 
   <footer>

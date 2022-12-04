@@ -4,160 +4,233 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>003: Landing Page</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <title>Muse Interiors</title>
   <link rel="stylesheet" href="landingpage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,600&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-  <div class="hero">
-    <nav>
-      <a class="nav-logo" href="#"><img src="img/logo-color.svg" alt="Logo"></a>
-      
-      <button class="nav-menu-icon">
-        <img class="nav-icon" src="img/icon_menu.svg" alt="Open Menu">
-      </button>
+  <div class="page-wrapper">
+  <div class="container">
+    <header class="main-header" id="mobile-nav" aria-label="Menu">
+        <span><a href="#">Muse.</a></span>
 
-      <div class="nav-links">
-        <ul>
-          <li><a href="#">Our Process</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>  
-        <button class="secondary-btn">Client Access</button>
-      </div>
-      
-
-    </nav>
-  
-    <section class="container">
-      <h1>Experience an <em class="italics blue">elevated</em> approach to private wealth managment</h1>
-      <button class="primary-btn">Learn More</button>
-      <button class="secondary-btn">Contact Us</button>
-    </section>
-  </div>
-
-  <main>
-    <div class="container">
-      <section class="intro">
-        <h2><em class="italics">Personalized</em><br> Financial Planning</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum suscipit est, ac scelerisque sem interdum ac. Vestibulum quis sapien quis urna convallis elementum. Integer eget sapien leo. Suspendisse potenti. Proin maximus neque eget metus aliquam, quis finibus metus rutrum.
-        </p>
-        <p>
-          Etiam eget auctor risus. Nulla viverra ultrices diam in sollicitudin. Nam ultricies lorem augue, eget laoreet nisi molestie sit amet.
-        </p>
-      </section>
-
-      <section class="services">
-        <h2>Our <em class="italics blue">Services</em></h2>
-        <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-
-        <div class="four-col">
-          <div class="card">
-            <h3>Business Owners</h3>
-            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-            <button class="secondary-btn">Learn More</button>
-          </div>
-          <div class="card">
-            <h3>Estate Planning</h3>
-            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-            <button class="secondary-btn">Learn More</button>
-          </div>
-          <div class="card">
-            <h3>Portfolio Management</h3>
-            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-            <button class="secondary-btn">Learn More</button>
-          </div>
-          <div class="card">
-            <h3>Financial Planning</h3>
-            <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-            <button class="secondary-btn">Learn More</button>
-          </div>
-        </div>
-      </section>
+        <label for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+        <input id="toggle-mobile-menu" type="checkbox" />
+        
+        <nav id="#main-menu">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li class="contact-nav"><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
-    <section class="years">
+    <section class="hero container">
+      <div class="hero--content">
+        <div class="hero--center">
+          <h1>
+            <span class="thin">Award winning</span><br>
+            interior design agency
+          </h1>
+          <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="main-btn">Connect with us</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="dual-feature">
+      <div class="dual-feature--one">
+        <div>
+          <span class="category">Commerical</span>
+          <h2>Designed with your clients in mind</h2>
+          <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="secondary-btn">Learn more</button>
+        </div>
+      </div>
+      <div class="dual-feature--two">
+        <div>
+          <span class="category">Residential</span>
+          <h2>Your home uniquely crafted for your family.</h2>
+          <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="secondary-btn">Learn more</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="team-feature">
+        <h2>Who we are</h2>
+        <p class="team-feature-desc">Muse is an interior design firm with 5 locations across the United States. With an average of 10 years of experience each, our team is full of architects, designers and contractors equipped to serve you for any project need.</p>
+        <div class="team-grid">
+          <div class="team-highlight">
+            <img src="img/ryan.png" alt="">
+            <span class="team-name">Ryan Lewis</span>
+            <span class="small-header">Founder</span>
+          </div>
+          <div class="team-highlight">
+            <img src="img/angela.png" alt="">
+            <span class="team-name">Angela Baker</span>
+            <span class="small-header">Lead architect</span>
+          </div>
+          <div class="team-highlight">
+            <img src="img/dave.png" alt="">
+            <span class="team-name">Dave Butcher</span>
+            <span class="small-header">Lead contractor</span>
+          </div>
+          <div class="team-highlight">
+            <img src="img/janis.png" alt="">
+            <span class="team-name">Janis Marshall</span>
+            <span class="small-header">Art curator</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="recent-projects">
+      <div class="projects-container container">
+        <h2>Recent projects</h2>
+        <p>
+          Over 100+ satisfied clients across the US, Canada and Mexico. Here are a few of our recently completed projects.
+        </p>
+
+        <div class="recent-project-grid">
+
+          <a href="#" class="recent-project-grid--project">
+            <img src="img/r-architecture-rOk4VSMS3Ck-unsplash.jpeg" alt="">
+            <div class="project-desc-grid">
+              <div>
+                <h3>Luxury apartment complex</h3>
+                <span class="small-header">Miami, FL</span>
+              </div>
+              <svg id="Group_4" data-name="Group 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectangle_32" data-name="Rectangle 32" width="18" height="18" fill="none"/>
+                  </clipPath>
+                </defs>
+                <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path)">
+                  <path id="Path_1" data-name="Path 1" d="M17,10v7H1V1H8" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <line id="Line_10" data-name="Line 10" y1="8" x2="8" transform="translate(9 1)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path_2" data-name="Path 2" d="M12,1h5V6" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </a>
+
+          <a href="#" class="recent-project-grid--project">
+            <img src="img/commercial.jpg" alt="">
+            <div class="project-desc-grid">
+              <div>
+                <h3>280 unit office building</h3>
+                <span class="small-header">San Fransico, CA</span>
+              </div>
+              <svg id="Group_4" data-name="Group 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectangle_32" data-name="Rectangle 32" width="18" height="18" fill="none"/>
+                  </clipPath>
+                </defs>
+                <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path)">
+                  <path id="Path_1" data-name="Path 1" d="M17,10v7H1V1H8" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <line id="Line_10" data-name="Line 10" y1="8" x2="8" transform="translate(9 1)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path_2" data-name="Path 2" d="M12,1h5V6" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </a>
+
+          <a href="#" class="recent-project-grid--project">
+            <img src="img/spacejoy-9M66C_w_ToM-unsplash.jpeg" alt="">
+            <div class="project-desc-grid">
+              <div>
+                <h3>Residential home staging</h3>
+                <span class="small-header">Seattle, WA</span>
+              </div>
+              <svg id="Group_4" data-name="Group 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectangle_32" data-name="Rectangle 32" width="18" height="18" fill="none"/>
+                  </clipPath>
+                </defs>
+                <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path)">
+                  <path id="Path_1" data-name="Path 1" d="M17,10v7H1V1H8" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <line id="Line_10" data-name="Line 10" y1="8" x2="8" transform="translate(9 1)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path_2" data-name="Path 2" d="M12,1h5V6" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
       <div class="container">
-        <h2>Over <em class="italics blue">45 Years</em> in the Industry</h2>
-  
-        <div class="two-col">
+        <h2>Contact us</h2>
+
+        <p>Have an upcoming project? Send us an inquiry for a quote.</p>
+        <form class="contactform-main" action="submit">
           <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum suscipit est, ac scelerisque sem Interdum ac. Vestibulum quis sapien quis urna convallis elementum. Integer eget sapien leo. Suspendisse potenti. 
-            </p>
-            <button class="primary-btn">Learn More</button>
+            <label for="email" class="small-header">Email address</label>
+            <input class="contactform-input" type="email" name="email" id="email" placeholder="Email address">
           </div>
-          <div class="img-fill"></div>
+          <div>
+            <label for="project-type" class="small-header">Project type</label>
+            <input class="contactform-input" type="text" name="project-type" id="project-type" placeholder="ex. Residential">
+          </div>
+
+          <button type="submit" class="contact-main-btn">Contact us</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+
+      <!-- form -->
+      <div class="footer-form-container">
+        <form class="footer-form" action="submit">
+          <div>
+            <label class="small-header--white" for="footer-email">Sign Up for Our Newsletter</label>
+            <input type="email" name="email" id="footer-email">
+          </div>
+
+          <button type="submit" class="footer-btn">Contact us</button>
+        </form>
+      </div>
+
+
+      <!-- links -->
+      <div class="footer-links">
+        <div>
+          <span class="small-header">Navigation</span>
+          <ul class="footer-links--nav">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="email-link" href="mailto:contact@museinteriors.com">contact@museinteriors.com</a>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <div class="container">
-      <section class="contact">
-        <h2>Let's Get <em class="italics lt-blue">Started</em></h2>
-        <p> Aenean elementum suscipit est, ac scelerisque sem interdum ac.</p>
-
-        <form action="submit">
-          <div class="form-two-col">
-            <label for="name">Full Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <label for="request">What can we help you with?</label>
-          <input type="text" name="request" id="request">
-          <button type="submit">Submit</button>
-        </form>
-      </section>
     </div>
-  </main>
-
-  <footer>
-    <div>
-      <img src="img/logo-white.svg" alt="Holloway Private Wealth">
-      <p>1357 Drivewood St, Los Angeles, CA 90210<br/>
-        901.234.5678</p>
-    </div>
-
-    <nav class="footer-nav">
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">Forms</a></li>
-          <li><a href="#">Help Center</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Your Account</h4>
-        <ul>
-          <li><a href="#">Client login</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">New accounts</a></li>
-        </ul>
-      </div>
-    </nav>
+    <span class="disclosure">© 2022 Muse Interiors</span>
   </footer>
-
-
-  
 </body>
 </html>
